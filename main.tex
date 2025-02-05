@@ -1,0 +1,129 @@
+\documentclass[11pt]{article}
+
+% ==========  PACKAGE SETUP  ==========
+\usepackage[margin=1in,top=0.5in]{geometry} % top margin 改小
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}               
+\usepackage{amsmath,amssymb}
+\usepackage{enumitem}              % 控制列表外观
+\usepackage{titlesec}              % 自定义标题格式
+\usepackage{fancyhdr}              % 页眉/页脚 (如果需要)
+\usepackage{setspace}              % 行距控制 (可选)
+
+% 不要页码
+\pagestyle{empty}
+
+\begin{document}
+
+% ========== HEADER (NAME + ADDRESS + CONTACT) ==========
+\begin{center}
+    {\large \textbf{JIAWEI WENG}}\\  % 你的名字
+    3723 Oleander Ter, West Palm Beach, FL 33404 \\
+    (917)-244-4903 \(\cdot\) EAD card \(\cdot\) \texttt{weng13860@gmail.com}
+\end{center}
+
+% ========== OBJECTIVE ==========
+\section*{Objective}  
+\vspace{-1.0em}
+\hrule
+\vspace{0.5em}
+
+Seeking a backend Software Development Engineer full-time position
+
+% ========== EDUCATION ==========
+\section*{Education}
+\vspace{-1.0em}
+\hrule
+\vspace{0.5em}
+
+\textbf{University of Florida, FL} \hfill 2021 -- 2025\\
+\textit{B.S. in Computer Science}
+
+% ========== TECHNICAL STRENGTHS ==========
+\section*{Technical Strengths}
+\vspace{-1.0em}
+\hrule
+\vspace{0.5em}
+
+\begin{tabular}{@{} l p{12cm}}
+\textbf{Computer Languages} & C++, C, Java, Python, SQL, TypeScript \\
+\textbf{Frameworks}         & React, Node.js,Next.js \\
+\textbf{Tools}              & Git, Clerk, Google Cloud Platform, Supabase, Prisma (ORM), Docker, MongoDB, RESTful API \\
+\end{tabular}
+
+% ========== COURSE PROJECT ==========
+\section*{Course Project}
+\vspace{-1.0em}
+\hrule
+\vspace{0.5em}
+
+% 外层 itemize: 每个项目一个 \item，保证标题左对齐
+\begin{itemize}[leftmargin=0pt, label={}, itemsep=0pt,
+  topsep=0pt,
+  parsep=0pt,
+  partopsep=0pt]  % label={} 去掉外层黑点
+  % --- Project 1: Cache Simulator ---
+  \item 
+    \textbf{Cache Simulator} \,|\, \textit{Simulation Program} \,|\, 2023
+    \begin{itemize}[label=\textbullet, leftmargin=1.5em, itemsep=0pt, topsep=0pt, parsep=0pt, partopsep=0pt]
+      \item Developed a cache simulator using C++ to read a memory access trace from a file, 
+            determine whether each memory access is a hit or a miss, and calculate the overall hit rate.
+      \item It simulates different main memory and cache sizes, cache associativity
+            (direct mapped, n-way associative, fully associative), and replacement methods (LRU, FIFO).
+    \end{itemize}
+
+  
+
+  % --- Project 2: Custom Binary Search Tree ---
+  \item
+    \textbf{Custom Binary Search Tree} \,|\, \textit{Data Structure Program} \,|\, 2022
+    \begin{itemize}[label=\textbullet, leftmargin=1.5em, itemsep=0pt, topsep=0pt, parsep=0pt, partopsep=0pt]
+      \item Created a custom BST using C++ that can store student names and IDs, providing 
+            operations to add, remove, and search students in the tree.
+      \item Supports printing student data in different traversals (in-order, pre-order, post-order),
+            allowing easy organization and retrieval based on IDs.
+    \end{itemize}
+
+  
+
+ 
+
+\end{itemize}
+
+% ========== SIDE PROJECT ==========
+\section*{Side Project}
+\vspace{-1.0em}
+\hrule
+\vspace{0.5em}
+
+\begin{itemize}[leftmargin=0pt, label={}, itemsep=0pt,
+  topsep=0pt,
+  parsep=0pt,
+  partopsep=0pt]  % label={} 去掉外层黑点
+  % --- Project 1: Cache Simulator ---
+  \item 
+    \textbf{AIDE} \,|\, \textit{Full-Stack Developer } \,|\, 
+ September 2024 -- Present
+    \begin{itemize}[label=\textbullet, leftmargin=1.5em, itemsep=0pt, topsep=0pt, parsep=0pt, partopsep=0pt]
+ \item \textbf{Database Design:} Leveraged Supabase (PostgreSQL + Prisma) for schema 
+        setup and migrations, utilizing soft delete to retain historical records and enable 
+        easy data restoration.
+
+  \item \textbf{Permissions:} Combined Clerk for login/session handling with 
+        role-based checks on the backend, ensuring multi-layer authorization for sensitive 
+        operations.
+
+  \item \textbf{RESTful API :} Provided core CRUD endpoints, implemented an 
+        “edit-lock” strategy to prevent simultaneous writes, and used transactions for atomic updates.
+
+  \item \textbf{AI Content Streaming:} Integrated third-party LLM services while injecting 
+        “tool calls” (e.g., weather, calculator) into the generation flow, returning responses 
+        in streaming mode for real-time front-end rendering.
+
+  \item \textbf{Deployment:} Hosted everything on Vercel’s serverless environment.
+      
+\end{itemize}
+\end{itemize}
+
+
+\end{document}

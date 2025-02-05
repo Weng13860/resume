@@ -1,0 +1,116 @@
+\documentclass[11pt]{article}
+
+% ==========  PACKAGE SETUP  ==========
+\usepackage[margin=1in,top=0.5in]{geometry} % top margin 改小
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}               
+\usepackage{amsmath,amssymb}
+\usepackage{enumitem}              % 控制列表外观
+\usepackage{titlesec}              % 自定义标题格式
+\usepackage{fancyhdr}              % 页眉/页脚 (如果需要)
+\usepackage{setspace}              % 行距控制 (可选)
+
+% 不要页码
+\pagestyle{empty}
+
+\begin{document}
+
+% ========== HEADER (NAME + ADDRESS + CONTACT) ==========
+\begin{center}
+    {\large \textbf{JIAWEI WENG}}\\  % 你的名字
+    3723 Oleander Ter, West Palm Beach, FL 33404 \\
+    (917)-244-4903 \(\cdot\) EAD card \(\cdot\) \texttt{weng13860@gmail.com}
+\end{center}
+
+% ========== OBJECTIVE ==========
+\section*{Objective}  
+\vspace{-1.0em}
+\hrule
+\vspace{0.5em}
+
+Seeking a full-stack Software Development Engineer full-time position, where I can leverage my experience in front-end and back-end development to build scalable applications and deliver high-quality user experiences.
+
+% ========== EDUCATION ==========
+\section*{Education}
+\vspace{-1.0em}
+\hrule
+\vspace{0.5em}
+
+\textbf{University of Florida, FL} \hfill 2021 -- 2025\\
+\textit{B.S. in Computer Science}
+
+% ========== TECHNICAL STRENGTHS ==========
+\section*{Technical Strengths}
+\vspace{-1.0em}
+\hrule
+\vspace{0.5em}
+
+\begin{tabular}{@{} l p{12cm}}
+\textbf{Computer Languages} & C++, C, Java, Python, SQL, TypeScript \\
+\textbf{Frameworks}         & React, Node.js,Next.js \\
+\textbf{Tools}              & Git, Clerk, Google Cloud Platform, Supabase, Prisma (ORM), Docker, MongoDB, RESTful API \\
+\end{tabular}
+
+% ========== COURSE PROJECT ==========
+\section*{Course Project}
+\vspace{-1.0em}
+\hrule
+\vspace{0.5em}
+
+% 外层 itemize: 每个项目一个 \item，保证标题左对齐
+\begin{itemize}[leftmargin=0pt, label={}, itemsep=0pt,
+  topsep=0pt,
+  parsep=0pt,
+  partopsep=0pt]  % label={} 去掉外层黑点
+  % --- Project 1: Cache Simulator ---
+  \item 
+    \textbf{Cache Simulator} \,|\, \textit{Simulation Program} \,|\, 2023
+    \begin{itemize}[label=\textbullet, leftmargin=1.5em, itemsep=0pt, topsep=0pt, parsep=0pt, partopsep=0pt]
+      \item Developed a cache simulator using C++ to read a memory access trace from a file, 
+            determine whether each memory access is a hit or a miss, and calculate the overall hit rate.
+      \item It simulates different main memory and cache sizes, cache associativity
+            (direct mapped, n-way associative, fully associative), and replacement methods (LRU, FIFO).
+    \end{itemize}
+
+  
+
+  % --- Project 2: Custom Binary Search Tree ---
+  \item
+    \textbf{Custom Binary Search Tree} \,|\, \textit{Data Structure Program} \,|\, 2022
+    \begin{itemize}[label=\textbullet, leftmargin=1.5em, itemsep=0pt, topsep=0pt, parsep=0pt, partopsep=0pt]
+      \item Created a custom BST using C++ that can store student names and IDs, providing 
+            operations to add, remove, and search students in the tree.
+      \item Supports printing student data in different traversals (in-order, pre-order, post-order),
+            allowing easy organization and retrieval based on IDs.
+    \end{itemize}
+
+  
+
+ 
+
+\end{itemize}
+
+% ========== SIDE PROJECT ==========
+\section*{Side Project}
+\vspace{-1.0em}
+\hrule
+\vspace{0.5em}
+
+\begin{itemize}[leftmargin=0pt, label={}, itemsep=0pt,
+  topsep=0pt,
+  parsep=0pt,
+  partopsep=0pt]  % label={} 去掉外层黑点
+  % --- Project 1: Cache Simulator ---
+  \item 
+    \textbf{AIDE} \,|\, \textit{Full-Stack Developer } \,|\, 
+ September 2024 -- Present
+    \begin{itemize}[label=\textbullet, leftmargin=1.5em, itemsep=0pt, topsep=0pt, parsep=0pt, partopsep=0pt]
+    \item {User Authentication:} Integrated Clerk for secure sign-ups, logins, and session management, handling identity verification seamlessly.
+  \item {RESTful APIs and AI Services:} Built a front-end/back-end data flow via RESTful APIs, utilizing third-party LLM endpoints for advanced AI responses. Introduced a \emph{tool call} mechanism (e.g., real-time weather, calculator) to ensure more accurate, context-aware outputs.
+  \item {Data Persistence:} Employed Supabase (PostgreSQL + Prisma) to store user conversation content and manage version control. This setup maintains robust data integrity while simplifying schema migrations.
+  \item {Editing Lock for Collaboration:} Implemented a lightweight concurrency lock so that once a user is editing a piece of content, others must wait until it’s released—preventing overwrite conflicts and ensuring consistent versioning.
+\end{itemize}
+\end{itemize}
+
+
+\end{document}
